@@ -21,6 +21,7 @@
 // Note that the "node" property is added to UIView directly via a category in ASDisplayNode.
 
 @interface _ASDisplayView : UIView
+@property (nullable, atomic, weak, readwrite) ASDisplayNode *asyncdisplaykit_node;
 
 // These methods expose a way for ASDisplayNode touch events to let the view call super touch events
 // Some UIKit mechanisms, like UITableView and UICollectionView selection handling, require this to work
